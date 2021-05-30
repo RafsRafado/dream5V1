@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="animate-top">CI-5</h1>
+  <div class="main" style="background: #90cdff38;">
+    <div class="slideshow-container animate-left">
+      <div class="mySlides1 fade">
+        <img src="imagens/imagem1.png" style="width:100%">
+      </div>
+    
+      <div class="mySlides1 fade">
+        <img src="imagens/imagem2.png" style="width:100%">
+      </div>
+    
+      <div class="mySlides1 fade">
+        <img src="imagens/imagem3.png" style="width:100%">
+      </div>
+    
+      <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+    </div>
+  <div class="divtexto animate-right" style="background: #90fbff6b;">
+<p class="texto">
+  A Nova Caixa de Pagamento Automático CI-5, é uma solução dinâmica e elimina a necessidade de manuseamento de dinheiro
+   no ponto de venda. Quando integrado com o seu sistema POS existente,  a CI-5 automatiza com segurança a manipulação 
+   de dinheiro para pagamento, minimizando o risco de erros, enquanto aumenta a produtividade dos colaboradores e um
+    melhor atendimento ao cliente. Projetada especificamente para ambientes de varejo, a CI-5 foi criada com estilo
+     simples para facilitar a integração em vários formatos de lojas.
+</p>
+</div>
+<div class="divtexto animate-left" style="background: #90ffd17c;">
+  <h3 style="text-align: center;">MAIOR EFICIÊNCIA</h2>
+    <p class="texto">
+      A CI-5 automatiza praticamente todas as etapas dos processos de manuseio de dinheiro no ponto-de-venda da sua loja.
+       Desde a contagem de dinheiro oferecida pelos clientes, até a validação das moedas e notas, dispensando a movimentação
+        de dinheiro na loja e preparando para transferência para o banco.
+    </p>
+    <h3 style="text-align: center;">SEGURANÇA MELHORADA</h3>
+    <p class="texto">
+      Este dispositivo é altamente seguro e permite que você ofereça potencialmente opções de autoatendimento em qualquer lugar em que  precise de receber dinheiro. 
+      A segurança é bastante aprimorada porque não há necessidade de tocar ou contar manualmente o dinheiro.
+       A CI-5 também garante que quaisquer notas suspeitas sejam reconhecidas e rejeitadas.
+    </p>
+</div>
+<div class="slideshow-container animate-right">
+  <div class="mySlides2 fade">
+    <img src="imagens/imagem4.png" style="width:100%">
+  </div>
+
+  <div class="mySlides2 fade">
+    <img src="imagens/imagem5.png" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+
+<div class="slideshow-container animate-left" >
+  <div class="mySlides3 fade">
+    <iframe height="300" width="500" src="https://www.youtube.com/embed/2w5pNK6wtXI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="mySlides3 fade">
+    <iframe height="300" width="500" src="https://www.youtube.com/embed/bcYCZPN50zY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+</div>
+<div class="divtexto animate-right" style="background: #c2ff906b;">
+  <table>
+    <thead>
+    <tr>
+    <th></th>
+    <th>RECICLADOR DE NOTAS</th>
+    <th>RECICLADOR DE MOEDAS</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><b>Medida (L × A × P)</b></td>
+    <td>200 x 590 x 300mm</td>
+    <td>320 x 590 x 300mm</td>
+    </tr>
+    <tr>
+    <td><b>PESO</b></td>
+    <td>30 kg</td>
+    <td>35 kg</td>
+    </tr>
+    <tr>
+    <td><b>Número de módulos recirculadores</b></td>
+    <td>3 recicladores Configuração livre</td>
+    <td>8 recicladores Configuração livre</td>
+    </tr>  
+    <tr>
+      <td><b>Capacidade notas/moedas</b></td>
+      <td>300 notas</td>
+      <td>Depende da configuração do módulo reciclador</td>
+    </tr>   
+    </tbody>
+    </table>
+  </div>
+</div>
+</div>
+
+    <script>
+      var slideIndex = [1,2,3];
+var slideId = ["mySlides1", "mySlides2", "mySlides3"];
+showSlides(1, 0);
+showSlides(1, 1);
+plusSlides(1, 2);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+    </script>
+</body>
+</html>
